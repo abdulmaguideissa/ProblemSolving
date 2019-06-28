@@ -1,3 +1,7 @@
+/*
+  Find the greatest counts of successive repetitions of a given number in a 
+  given array of numbers.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
