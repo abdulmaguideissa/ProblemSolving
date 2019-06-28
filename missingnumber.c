@@ -47,7 +47,7 @@ int solution(int * arr, int n)
 		arr_counts[arr[i]]++;
 	}
 
-	for(int i = 1; i < max_num; i++)
+	for(int i = 1; i <= max_num; i++)
 	{
 		if(arr_counts[i] == 0)
 		{
