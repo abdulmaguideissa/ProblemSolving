@@ -14,17 +14,12 @@
 int solution(int * arr, int n)
 {
 	int max_num = INT_MIN;
-	int min_num = INT_MAX;
 
 	for(int i = 0; i < n; i++)
 	{
 		if(arr[i] > max_num)
 		{
 			max_num = arr[i];
-		}
-		else
-		{
-			min_num = arr[i];
 		}
 	}
 
@@ -52,7 +47,7 @@ int solution(int * arr, int n)
 		arr_counts[arr[i]]++;
 	}
 
-	for(int i = min_num; i < max_num; i++)
+	for(int i = 1; i < max_num; i++)
 	{
 		if(arr_counts[i] == 0)
 		{
