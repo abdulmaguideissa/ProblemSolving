@@ -11,7 +11,7 @@
   }
   return current_gcd;
 }*/
-long gcd(long long a,long long b){
+long gcd(long long a, long long b){
 	long d, current_gcd = 1;
 	while ( a % b != 0 ) {
 		d = b;
