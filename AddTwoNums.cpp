@@ -17,12 +17,12 @@ public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode * digit = new ListNode(-1);
         ListNode * res   = digit;
-        ListNode * uhead = l1;
-        ListNode * dhead = l2;
+        ListNode * uhead = l1;  // up head
+        ListNode * dhead = l2;  // down head
         int remainder    = 0;
         
-        int uval = 0;
-        int dval = 0;
+        int uval = 0;  // up value
+        int dval = 0;  // down value
         int sum  = 0; 
         
         while(NULL != uhead || NULL != dhead){
@@ -34,7 +34,7 @@ public:
             digit->next = new ListNode(sum % 10);
             digit       = digit->next;
             
-            if(NULL != uhead)
+            if(NULL != uhead)        // important not to crach.
                 uhead = uhead->next;
             if(NULL != dhead)
                 dhead = dhead->next;
