@@ -45,9 +45,18 @@ class Queue {
 			}
 			return s1.top();
 		}
-		// get size
+		// return the current size
 		unsigned long get_size(void) {
 			return size;
+		}
+		// check if empty
+		bool empty(void) {
+			if (get_size()) {
+				return false;
+			}
+			else {
+				return true;
+			}
 		}
 };
 

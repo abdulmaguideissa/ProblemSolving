@@ -45,9 +45,18 @@ class Stack {
 			}
 			return q1.front();
 		}
-
+		// return the current size
 		unsigned long get_size(void) {
 			return size;
+		}
+		// check if empty
+		bool empty(void) {
+			if (get_size()) {
+				return false;
+			}
+			else {
+				return true;
+			}
 		}
 };
 
