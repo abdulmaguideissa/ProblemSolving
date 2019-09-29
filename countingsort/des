@@ -1,2 +1,3 @@
-enhanced implementation of counting sort
-running time is O(n + k)
+enhanced implementation of counting sort.
+running time is O(n + k).
+fits the small integers criteria.
